@@ -1,7 +1,7 @@
 export default [
   {
-    path: '/',
-    name: 'HelloWorld',
-    component: () => import('../../components/VxHeader.vue')
+    path: '/home',
+    name: 'home',
+    component: () => import('../../pages/home')
   }
 ]

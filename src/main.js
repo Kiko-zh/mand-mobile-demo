@@ -5,6 +5,8 @@ import mandMobile from 'mand-mobile'
 import 'mand-mobile/lib/mand-mobile.css'
 import App from './App'
 import router from './router'
+// 引入样式
+import 'assets/common/stylus/index.styl'
 
 Vue.use(mandMobile)
 
