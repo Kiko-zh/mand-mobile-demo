@@ -1,6 +1,8 @@
 <template>
   <div class="container">
-    <vx-header></vx-header>
+    <vx-header
+    :headerObj="headerObj"
+  ></vx-header>
   </div>
 </template>
 
@@ -14,7 +16,34 @@ export default {
   },
   props: {},
   data () {
-    return {}
+    return {
+      headerObj: {
+        leftIcon: '',
+        search: {
+          heInput: '',
+          holder: '您有699元红包待查',
+          leftIcon: 'icon-sousuo',
+          rightIcon: 'icon-gougou'
+        },
+        iconList: [
+          {
+            icon: 'icon-rengongrenwu',
+            tag: 0
+          },
+          {
+            icon: 'icon-message',
+            tag: 2
+          }
+        ],
+        mdTag: {
+          size: 'tiny',
+          shape: 'circle',
+          sharp: 'bottom-left',
+          fillColor: '#d61819',
+          type: 'fill'
+        }
+      }
+    }
   },
   computed: {},
   watch: {},
